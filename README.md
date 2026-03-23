@@ -1,6 +1,6 @@
-# 🧑‍💻 Alex Rivera — Portfolio
+# 🧑‍💻 Snitik Swaroop — Portfolio
 
-A professional developer portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**, with a fully working contact form using Nodemailer (SMTP). Design inspired by the Anthropic website.
+A professional developer portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**, with a fully working contact form using Nodemailer (SMTP). 
 
 ---
 
