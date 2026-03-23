@@ -26,7 +26,7 @@ const monoFont = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Snitik Swaroop — Software Developer",
+  title: "Snitik Swaroop",
   description: "Software developer crafting thoughtful, performant systems — from elegant APIs to polished UIs.",
   openGraph: {
     title: "Snitik Swaroop — Software Developer",
