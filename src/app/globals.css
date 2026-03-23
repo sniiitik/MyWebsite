@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Anthropic-style underline on key heading words */
+  .underline-accent {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+  }
+
+  /* Section fade-up animation with stagger support */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-ink text-cream font-body font-medium px-6 py-3 rounded-sm text-sm tracking-wide hover:bg-ink-muted transition-colors duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-ink/20 text-ink font-body font-medium px-6 py-3 rounded-sm text-sm tracking-wide hover:border-ink/60 hover:bg-ink/5 transition-all duration-200;
+  }
+
+  .tag-chip {
+    @apply font-mono text-xs px-3 py-1 rounded-full border tracking-wide;
+  }
+
+  .section-label {
+    @apply flex items-center gap-3 mb-2;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+}
