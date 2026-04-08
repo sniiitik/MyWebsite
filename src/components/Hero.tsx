@@ -83,14 +83,6 @@ export default function Hero() {
 
           {/* Left — massive headline */}
           <div>
-            {/* Available badge */}
-            <div className="inline-flex items-center gap-2 border border-ink/15 rounded-full px-4 py-1.5 mb-10">
-              <span className="w-2 h-2 rounded-full bg-rust animate-pulse-dot" />
-              <span className="font-body text-xs font-medium text-ink-muted tracking-widest uppercase">
-                Available for work
-              </span>
-            </div>
-
             {/* Anthropic-style headline: massive, bold, with underline on key words */}
             <h1 className="font-display font-black text-ink leading-[1.02] tracking-tight"
               style={{ fontSize: "clamp(52px, 7.5vw, 96px)" }}>

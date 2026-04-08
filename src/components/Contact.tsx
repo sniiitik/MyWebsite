@@ -7,7 +7,6 @@ import SectionLabel from "./SectionLabel";
 type Status = "idle" | "loading" | "success" | "error";
 
 export default function Contact() {
-
   const socialLinks = [
     {
       icon: Github,
@@ -72,13 +71,13 @@ export default function Contact() {
               className="font-display font-black text-ink leading-tight tracking-tight mt-2"
               style={{ fontSize: "clamp(32px, 5vw, 56px)" }}
             >
-              Let's build something{" "}
+              Let&apos;s build something{" "}
               <span className="underline decoration-[2.5px] underline-offset-[6px] decoration-rust">
                 great.
               </span>
             </h2>
             <p className="font-body text-ink-muted font-light text-lg leading-relaxed mt-6">
-              Have a project in mind, a question, or just want to say hello? I'd love to hear from you.
+              Have a project in mind, a question, or just want to say hello? I&apos;d love to hear from you.
             </p>
 
             {/* Social links */}
@@ -106,7 +105,7 @@ export default function Contact() {
                 <CheckCircle size={48} className="text-rust mb-4" />
                 <h3 className="font-display font-bold text-ink text-2xl tracking-tight">Message sent!</h3>
                 <p className="font-body text-ink-faint font-light text-sm mt-2">
-                  I'll get back to you within 48 hours.
+                  I&apos;ll get back to you within 48 hours.
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
