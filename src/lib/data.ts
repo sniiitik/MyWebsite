@@ -106,10 +106,49 @@ export const SKILLS = [
   },
 ] as const;
 
+export const EXPERIENCE = [
+  {
+    company: "SensePlus",
+    location: "Pune, IN",
+    role: "Founder",
+    period: "Feb 2026 - Present",
+    color: "#8c5e3c",
+    highlights: [
+      "Architected and built an AI-driven health analysis system using React Native, Node.js, and Firebase for real-time inference on multimodal inputs.",
+      "Designed an ML inference pipeline achieving 80-90% accuracy for disease prediction across preprocessing, model serving, and response generation.",
+      "Led end-to-end product development across system design, backend workflows, recommendations, and mobile app delivery.",
+    ],
+  },
+  {
+    company: "Holtec Asia",
+    location: "Pune, IN",
+    role: "Full Stack Software Engineer",
+    period: "June 2024 - Present",
+    color: "#2f6f73",
+    highlights: [
+      "Built and maintained enterprise applications with .NET Core, C#, and SQL for business-critical workflows.",
+      "Designed and optimized RESTful APIs and backend services to improve response times and system throughput.",
+      "Implemented scalable React and .NET solutions and integrated AI-driven features to improve automation and decision-making.",
+    ],
+  },
+  {
+    company: "Glenmark Pharmaceuticals Ltd.",
+    location: "Mumbai, IN",
+    role: "Mobile Developer",
+    period: "Jan 2024 - May 2024",
+    color: "#4a7fa6",
+    highlights: [
+      "Developed a responsive web application that improved user engagement by 20% through UI/UX and performance improvements.",
+      "Engineered backend services with Node.js and MongoDB to improve query efficiency and overall system throughput.",
+      "Designed RESTful APIs that supported a modular and scalable application architecture.",
+    ],
+  },
+] as const;
+
 export const STATS = [
   { value: "3+", label: "Years experience" },
-  { value: "10+", label: "Projects shipped" },
+  { value: `${PROJECTS.length}`, label: "Projects shipped" },
   // { value: "99.9%", label: "Uptime SLA" },
 ] as const;
 
-export const NAV_LINKS = ["About", "Projects", "Skills", "Contact"] as const;
+export const NAV_LINKS = ["About", "Experience", "Projects", "Skills", "Contact"] as const;

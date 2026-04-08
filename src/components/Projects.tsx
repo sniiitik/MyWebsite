@@ -152,8 +152,8 @@ function ProjectModal({
         aria-hidden="true"
       />
 
-      <div className="relative max-w-4xl mx-auto max-h-full overflow-y-auto rounded-[30px] border border-ink/10 bg-[#f4f1ea] shadow-2xl">
-        <div className="sticky top-0 z-10 flex justify-end p-4 bg-[linear-gradient(to_bottom,rgba(244,241,234,0.94),rgba(244,241,234,0.78),transparent)]">
+      <div className="relative max-w-4xl mx-auto max-h-full overflow-y-auto rounded-[30px] border border-ink/10 bg-cream-card shadow-2xl">
+        <div className="sticky top-0 z-10 flex justify-end p-4 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.96),rgba(255,255,255,0.82),transparent)]">
           <button
             type="button"
             onClick={onClose}
@@ -190,7 +190,7 @@ function ProjectModal({
             {project.highlights.map((highlight) => (
               <div
                 key={highlight}
-                className="rounded-3xl border border-ink/6 bg-white/35 px-5 py-5 sm:px-6"
+                className="rounded-3xl border border-ink/6 bg-cream px-5 py-5 sm:px-6"
               >
                 <div className="flex items-start gap-4">
                   <span
@@ -212,7 +212,7 @@ function ProjectModal({
                 className="tag-chip"
                 style={{
                   color: project.color,
-                  background: "#fffaf2",
+                  background: "#f5f5f7",
                   borderColor: project.color + "30",
                 }}
               >

@@ -116,7 +116,7 @@ export default function Hero() {
           {/* Right — descriptor text, Anthropic-style */}
           <div className="lg:pt-4">
             <p className="font-body text-ink text-xl lg:text-2xl leading-relaxed font-light">
-              I build thoughtful, performant systems from elegant APIs to polished UIs. I care deeply about the craft of software and its long-term impact.
+              I build AI products, developer tools, and backend systems with a focus on clarity, reliability, and real-world usefulness.
             </p>
 
             {/* Stats row */}

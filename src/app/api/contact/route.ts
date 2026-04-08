@@ -86,10 +86,10 @@ export async function POST(req: NextRequest) {
 
     // ── Auto-reply to sender ──────────────────────────────────────────────────
     await transporter.sendMail({
-      from: `"Alex Rivera" <${process.env.SMTP_USER}>`,
+      from: `"Snitik Swaroop" <${process.env.SMTP_USER}>`,
       to: email,
       subject: `Thanks for reaching out, ${name}!`,
-      text: `Hi ${name},\n\nThanks for your message! I've received it and will get back to you within 48 hours.\n\nBest,\nAlex Rivera\nSoftware Developer`,
+      text: `Hi ${name},\n\nThanks for your message! I've received it and will get back to you within 48 hours.\n\nBest,\nSnitik Swaroop\nSoftware Developer`,
       html: `
         <div style="font-family:'Georgia',serif;max-width:580px;margin:0 auto;padding:40px 32px;background:#eae8e0;border-radius:12px;">
           <h1 style="font-size:28px;font-weight:900;color:#0f0e0c;margin:0 0 16px;letter-spacing:-.02em;line-height:1.1;">
@@ -102,7 +102,7 @@ export async function POST(req: NextRequest) {
             In the meantime, feel free to explore my projects or connect with me on LinkedIn.
           </p>
           <div style="border-top:1px solid rgba(15,14,12,0.1);padding-top:24px;margin-top:8px;">
-            <p style="margin:0;font-size:15px;font-family:sans-serif;font-weight:600;color:#0f0e0c;">Alex Rivera</p>
+            <p style="margin:0;font-size:15px;font-family:sans-serif;font-weight:600;color:#0f0e0c;">Snitik Swaroop</p>
             <p style="margin:4px 0 0;font-size:13px;font-family:sans-serif;color:#7a746c;text-transform:uppercase;letter-spacing:.06em;">Software Developer</p>
           </div>
         </div>

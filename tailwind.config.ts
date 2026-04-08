@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#eae8e0",
-        "cream-dark": "#dedad0",
-        "cream-card": "#f2f0e8",
-        ink: "#0f0e0c",
-        "ink-muted": "#3a3530",
-        "ink-faint": "#7a746c",
-        rust: "#cf6c3f",
-        "rust-light": "rgba(207,108,63,0.12)",
+        cream: "#f5f5f7",
+        "cream-dark": "#ececf0",
+        "cream-card": "#ffffff",
+        ink: "#1d1d1f",
+        "ink-muted": "#424245",
+        "ink-faint": "#86868b",
+        rust: "#0071e3",
+        "rust-light": "rgba(0,113,227,0.12)",
       },
       fontFamily: {
         // Matching Anthropic: Tiempos Headline (or Freight Display) for display,
