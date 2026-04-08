@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
-import { NAV_LINKS } from "@/lib/data";
+import { Menu, X, ChevronDown, FileText } from "lucide-react";
+import { NAV_LINKS, PROFILE } from "@/lib/data";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -63,13 +63,22 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA — black pill like Anthropic's "Try Claude" */}
-        <button
-          onClick={() => scrollTo("Contact")}
-          className="hidden md:flex items-center gap-1.5 bg-ink text-cream font-body font-medium text-sm px-5 py-2.5 rounded-full hover:bg-ink-muted transition-colors duration-200"
-        >
-          Get in Touch <ChevronDown size={14} />
-        </button>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href={PROFILE.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-ink/15 text-ink font-body font-medium text-sm px-4 py-2.5 rounded-full hover:border-ink/35 hover:bg-cream-card transition-colors duration-200"
+          >
+            <FileText size={14} /> Resume
+          </a>
+          <button
+            onClick={() => scrollTo("Contact")}
+            className="flex items-center gap-1.5 bg-ink text-cream font-body font-medium text-sm px-5 py-2.5 rounded-full hover:bg-ink-muted transition-colors duration-200"
+          >
+            Get in Touch <ChevronDown size={14} />
+          </button>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -99,6 +108,14 @@ export default function Navbar() {
           >
             Get in Touch
           </button>
+          <a
+            href={PROFILE.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 block w-full text-center border border-ink/12 text-ink font-body font-medium text-sm py-3 rounded-full"
+          >
+            Resume
+          </a>
         </div>
       )}
     </header>

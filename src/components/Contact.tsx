@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Github, Linkedin, Twitter, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, CheckCircle, AlertCircle, Loader2, FileText } from "lucide-react";
+import { PROFILE } from "@/lib/data";
 import SectionLabel from "./SectionLabel";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -79,6 +80,30 @@ export default function Contact() {
             <p className="font-body text-ink-muted font-light text-lg leading-relaxed mt-6">
               Have a project in mind, a question, or just want to say hello? I&apos;d love to hear from you.
             </p>
+
+            <div className="mt-8 flex flex-col gap-3">
+              <a
+                href={`mailto:${PROFILE.email}`}
+                className="inline-flex items-center gap-3 text-ink hover:text-rust transition-colors"
+              >
+                <span className="w-10 h-10 rounded-full border border-ink/12 flex items-center justify-center">
+                  <Mail size={16} />
+                </span>
+                <span className="font-body text-sm sm:text-base">{PROFILE.email}</span>
+              </a>
+
+              <a
+                href={PROFILE.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 text-ink hover:text-rust transition-colors"
+              >
+                <span className="w-10 h-10 rounded-full border border-ink/12 flex items-center justify-center">
+                  <FileText size={16} />
+                </span>
+                <span className="font-body text-sm sm:text-base">View resume</span>
+              </a>
+            </div>
 
             {/* Social links */}
             <div className="flex gap-4 mt-10">

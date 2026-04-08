@@ -145,6 +145,11 @@ export const EXPERIENCE = [
   },
 ] as const;
 
+export const PROFILE = {
+  email: "snitikswaroop@gmail.com",
+  resumeUrl: "/resume.pdf",
+} as const;
+
 export const STATS = [
   { value: "3+", label: "Years experience" },
   { value: `${PROJECTS.length}`, label: "Projects shipped" },
